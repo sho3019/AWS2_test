@@ -6,10 +6,10 @@ error_flag = 0
 for i in range(1, len(args) - 1):
     st = len(args[i])
     if("0" <= args[i][0] <= "9" or args[i][0] == "-"):
-            pass
+        pass
     else:
+        print("b")
         error_flag = 1
-        break
 
     for n in range(1, st):
         
@@ -19,12 +19,11 @@ for i in range(1, len(args) - 1):
             error_flag = 1
             break
     
-    if(error_flag == 0):
-        num1 = int(args[1])
-        num2 = int(args[2])
-        operation = args[3]
-
-    #print(type(num1))
-
-    else:
-        print("incorrect input")
+print(error_flag)
+if(error_flag == 0):
+    num1 = int(args[1])
+    num2 = int(args[2])
+    operation = args[3]
+        
+else:
+    print("incorrect input")
