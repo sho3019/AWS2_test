@@ -19,7 +19,6 @@ for i in range(1, len(args) - 1):
             error_flag = 1
             break
     
-print(error_flag)
 if(error_flag == 0):
     num1 = int(args[1])
     num2 = int(args[2])
