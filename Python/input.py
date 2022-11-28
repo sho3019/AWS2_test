@@ -1,7 +1,7 @@
 import sys
 
 args = sys.argv
-print(args)
+
 error_flag = 0
 for i in range(1, len(args) - 1):
     st = len(args[i])
@@ -23,5 +23,4 @@ if(error_flag == 0):
     num2 = int(args[2])
     operation = args[3]
         
-#else:
-    #print("incorrect input")
+
