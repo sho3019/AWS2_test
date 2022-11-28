@@ -51,8 +51,8 @@ jobs:
                   Data2:${{ github.event.inputs.num2}},
                   type:${{ github.event.inputs.operator}}
 
-      - name: Python_Input
-        run: python input.py ${{ github.event.inputs.num1}} ${{ github.event.inputs.num2}} ${{ github.event.inputs.operator}}
+      #- name: Python_Input
+        #run: python input.py ${{ github.event.inputs.num1}} ${{ github.event.inputs.num2}} ${{ github.event.inputs.operator}}
 
       - name: Python_clac
-        run: python calc.py
+        run: python calc.py ${{ github.event.inputs.num1}} ${{ github.event.inputs.num2}} ${{ github.event.inputs.operator}}

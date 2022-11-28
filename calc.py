@@ -1,7 +1,5 @@
 import input
 
-
-
 ans = 0
 #print(num1)
 print(input.error_flag)
