@@ -21,3 +21,8 @@ if(i.error_flag == 0):
 
     elif(operation == "devision"):
         ans = num1 / num2
+
+else:
+    ans = "error: incorrect input"
+
+print("answer :" + str(ans))
