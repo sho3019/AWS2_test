@@ -15,9 +15,8 @@ if (input.error_flag == 0):
     elif(input.operation == "devision"):
         ans = input.num1 / input.num2
 
-    #print("answer :" + str(ans))
+    print("answer :" + str(ans))
 
 else:
     ans = "error: incorrect input"
-
-print("answer :" + str(ans))
+    print(ans)
