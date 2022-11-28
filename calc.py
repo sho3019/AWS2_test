@@ -1,28 +1,30 @@
 import sys
 
-sys.path.append("/input")
-import input as i
+args = sys.argv
 
-if(i.error_flag == 0):
-    num1 = i.num1
-    num2 = i.num2
-    operation = i.operation
+error_flag = 0
+for i in range(1, len(args) - 1):
+    st = len(args[i])
+    if("0" <= args[i][0] <= "9" or args[i][0] == "-"):
+            pass
+    else:
+        error_flag = 1
+        break
 
-    ans = 0
+    for n in range(1, st):
+        
+        if("0" <= args[i][n] <= "9"):
+            pass
+        else:
+            error_flag = 1
+            break
+    
+    if(error_flag == 0):
+        num1 = int(args[1])
+        num2 = int(args[2])
+        operation = args[3]
 
-    if(operation == "plus"):
-        ans = num1 + num2
+    #print(type(num1))
 
-    elif(operation == "minus"):
-        ans = num1 - num2
-
-    elif(operation == "cross"):
-        ans = num1 * num2
-
-    elif(operation == "devision"):
-        ans = num1 / num2
-
-else:
-    ans = "error: incorrect input"
-
-print("answer :" + str(ans))
+    else:
+        print("incorrect input")

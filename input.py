@@ -18,12 +18,13 @@ for i in range(1, len(args) - 1):
         else:
             error_flag = 1
             break
+    
+    if(error_flag == 0):
+        num1 = int(args[1])
+        num2 = int(args[2])
+        operation = args[3]
 
-if(error_flag == 0):
-    num1 = int(args[1])
-    num2 = int(args[2])
-    operation = args[3]
+    #print(type(num1))
 
-print(num1)
-print(num2)
-print(operation)
+    else:
+        print("incorrect input")
