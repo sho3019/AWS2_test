@@ -4,6 +4,7 @@ import input
 
 ans = 0
 #print(num1)
+print(input.error_flag)
 if (input.error_flag == 0):
     if(input.operation == "plus"):
         ans = input.num1 + input.num2
