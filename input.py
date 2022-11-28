@@ -23,3 +23,7 @@ if(error_flag == 0):
     num1 = int(args[1])
     num2 = int(args[2])
     operation = args[3]
+
+print(num1)
+print(num2)
+print(operation)
