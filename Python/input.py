@@ -1,7 +1,7 @@
 import sys
 
 args = sys.argv
-
+print(args)
 error_flag = 0
 for i in range(1, len(args) - 1):
     st = len(args[i])

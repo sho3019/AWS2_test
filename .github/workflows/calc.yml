@@ -54,7 +54,7 @@ jobs:
       #- name: Python_Input
         #run: python input.py ${{ github.event.inputs.num1}} ${{ github.event.inputs.num2}} ${{ github.event.inputs.operator}}
 
-      - name: Python_clac
+      - name: Python_clac.py
         run: |
               cd Python
               python calc.py ${{ github.event.inputs.num1}} ${{ github.event.inputs.num2}} ${{ github.event.inputs.operator}}
