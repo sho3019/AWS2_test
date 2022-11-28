@@ -8,7 +8,6 @@ for i in range(1, len(args) - 1):
     if("0" <= args[i][0] <= "9" or args[i][0] == "-"):
         pass
     else:
-        print("b")
         error_flag = 1
 
     for n in range(1, st):
@@ -24,5 +23,5 @@ if(error_flag == 0):
     num2 = int(args[2])
     operation = args[3]
         
-else:
-    print("incorrect input")
+#else:
+    #print("incorrect input")
