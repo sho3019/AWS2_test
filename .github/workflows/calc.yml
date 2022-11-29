@@ -37,7 +37,6 @@ jobs:
     runs-on: self-hosted
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-  job1:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
@@ -46,7 +45,10 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: 3.6
-      
+jobs:
+
+  input:
+    step:
       - name: input data
         run: echo Data1:${{ github.event.inputs.num1}},  
                   Data2:${{ github.event.inputs.num2}},
