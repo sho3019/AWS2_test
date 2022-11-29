@@ -26,7 +26,6 @@ def calc(operation, num1, num2):
 
 num1 = input.num1
 num2 = input.num2
-error_flag = input.error_flag
 operation = input.operation
 ans = calc(operation, num1, num2)
 print(ans)
