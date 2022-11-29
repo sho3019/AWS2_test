@@ -58,3 +58,8 @@ jobs:
         run: |
               cd Python
               python calc.py ${{ github.event.inputs.num1}} ${{ github.event.inputs.num2}} ${{ github.event.inputs.operator}}
+      
+      - name: error sentence
+        if: failure()
+        run: |
+              echo "error : incorrect input"
