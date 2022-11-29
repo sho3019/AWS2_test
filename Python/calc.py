@@ -17,9 +17,10 @@ def calc(operation, num1, num2):
     
     else:
         #print("error : incorrect operation")
-        pass
+        ans = "error : incorrect operation"
+        ans = float(ans)
     
-    ans = "answer : " + str(ans)
+    #ans = "answer : " + str(ans)
     
     return ans
 
@@ -28,7 +29,7 @@ num1 = input.num1
 num2 = input.num2
 operation = input.operation
 ans = calc(operation, num1, num2)
-print(ans)
+print("answer :" + str(ans))
 
 #error_flag = 0
 #operation = "plus"
