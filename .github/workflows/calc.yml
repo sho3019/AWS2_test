@@ -47,6 +47,7 @@ jobs:
           python-version: 3.6
 
   input:
+    runs-on: self-hosted
     steps:
       - name: input data
         run: echo Data1:${{ github.event.inputs.num1}},  
