@@ -47,7 +47,7 @@ jobs:
           python-version: 3.6
 
   input:
-    step:
+    steps:
       - name: input data
         run: echo Data1:${{ github.event.inputs.num1}},  
                   Data2:${{ github.event.inputs.num2}},
