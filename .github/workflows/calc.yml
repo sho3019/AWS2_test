@@ -53,7 +53,7 @@ jobs:
 
   python-execute:
     runs-on: self-hosted
-    needs: write input data
+    needs: write_input-data
     steps:
       - name: Set Python version
         uses: actions/setup-python@v3
